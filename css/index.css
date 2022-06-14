@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('./colors.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  color: inherit;
+  background-color: inherit;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: var(--body);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+  padding: 40px;
+  transition: 0.3s;
+}
+
+
+.btn-theme {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 32px;
+
+}
+
+.btn-theme:hover {
+  opacity: 0.5;
+}
+
+.clockBox {
+  max-width: 620px;
+  width: 100%;
+  box-shadow: var(--boxshadow);
+  padding: 95px 0px;
+  border-radius: 10px;
+  transition: 0s !important;
+}
+
+
+.clockBox h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--textClock);
+  text-shadow: var(--text-shadows);
+  display: flex;
+  place-content: center;
+  gap: 10px;
+  place-items: center;
+
+}
+
+h1 span::after {
+  font-size: 16px;
+
+}
+
+.Hour::after {
+  content: "Hr";
+  color: var(--textClock);
+  text-shadow: var(--text-shadows);
+}
+
+.Minutes::after {
+  content: "Min";
+  color: var(--textClock);
+  text-shadow: var(--text-shadows);
+}
+
+.Seconds::after {
+  content: "Sec";
+  color: var(--textClock);
+  text-shadow: var(--text-shadows);
+}
+
+
+.components-btn {
+  max-width: 620px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn-restart:hover i {
+  -webkit-animation: rotate-center .3s ease-in-out reverse both;
+  animation: rotate-center .3s ease-in-out reverse both;
+}
+
+.btn-start {
+  color: var(--btn-primary-cl);
+  background-color: var(--btn-primary-bg);
+  box-shadow: var(--btn-shadow);
+}
+
+.btn-restart {
+  color: var(--btn-secondary-cl);
+  background-color: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-cl);
+}
+
+.dots {
+  animation: dots 1s alternate infinite;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width:660px) {
+  .clockBox {
+    padding: 40px;
+  }
+
+  .btn-theme {
+    width: 48px;
+  }
+
+  .clockBox h1 {
+    font-size: 40px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  color: var(--textClock);
+}
+
+@media screen and (max-width:451px) {
+
+
+  .clockBox h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+@keyframes dots {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
+}

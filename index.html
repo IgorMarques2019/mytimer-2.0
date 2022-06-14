@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" [data-colorScheme="light" ]>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" href="./icons/study.png" type="image/png">
+  <title>Study Mode</title>
+</head>
+
+<body class="">
+  <img class="btn-theme" src="./icons/mode_night.svg" alt="Apagar As Luzes" onclick="theme()">
+
+  <div class="clockBox">
+
+    <h1>
+      <span class="Minutes">25</span>
+      <span class="dots">:</span>
+      <span class="Seconds">00</span>
+    </h1>
+  </div>
+  <div class="components-btn">
+    <p class="btn btn-start" onclick="start()"><i class="fa-solid fa-play"></i></p>
+    <p class="btn btn-restart"><i class="fa-solid fa-arrow-rotate-left"></i></p>
+  </div>
+
+  <footer>
+    <p>Pause to relax</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
