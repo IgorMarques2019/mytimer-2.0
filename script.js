@@ -18,6 +18,10 @@ function theme() {
 let play = document.querySelector(".btn-start")
 let iconBtn = document.querySelector(".btn-start i")
 
+
+
+
+
 let minuteIn = document.querySelector('.Minutes'),
   second = document.querySelector('.Seconds'),
   minute = 24,
@@ -25,6 +29,12 @@ let minuteIn = document.querySelector('.Minutes'),
   progress = 0,
   desc = 0;
 
+
+function restart() {
+  minute = 24,
+    sec = 60;
+    clock()
+}
 
 function start() {
   iconBtn.className = "fa-solid fa-pause"

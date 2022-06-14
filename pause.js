@@ -25,6 +25,11 @@ let minuteIn = document.querySelector('.Minutes'),
   progress = 0,
   desc = 0;
 
+  function restart() {
+    minute = 4,
+      sec = 60;
+      clock()
+  }
 
 function start() {
   iconBtn.className = "fa-solid fa-pause"
