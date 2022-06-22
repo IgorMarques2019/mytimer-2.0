@@ -1,7 +1,8 @@
 :root {
-  --body: #f5f5f5;
-  --boxshadow: 0px 0px  20px #dededeb2;
-  --textClock: #101010;
+  --body:#ededed;
+  --boxshadow: 31px 31px 62px #e7e4e4,
+    -31px -31px 62px #ffffff;
+  --textClock: #101110;
 
   /* Componentes */
   --btn-primary-bg: #66CC66;
@@ -9,25 +10,26 @@
   --btn-secondary-bg: #f2f2f2;
   --btn-secondary-cl: #CC6666;
   --text-shadows: none;
-  -btn-shadow:none;
-  
+  -btn-shadow: none;
+
 }
 
 
 
 
 .dark {
-  --body: #050505;
-  --ShadowBoxBottom: #3333334a;
+  --body: #110011;
+  --ShadowBoxBottom: #09000967;
   --ShadowBoxTop: #ffffff;
   --textClock: #FFFFFF;
-  --boxshadow: 10px 10px 20px #000000, -10px -10px 200px #0A0A0A;
+  --boxshadow: 31px 31px 62px #080008,
+    -31px -31px 62px #1a001a;
   /* Componentes */
   --btn-primary-bg: #66CC66;
   --btn-primary-cl: #274D19;
-  --btn-secondary-bg: #050505;
+  --btn-secondary-bg: #110011;
   --btn-secondary-cl: #CC6666;
   --text-shadows: 0px 4px 20px rgba(255, 255, 255, 0.15);
-  --btn-shadow:0px 4px 50px rgba(102, 204, 102, 0.2);
-  
+  --btn-shadow: 0px 4px 50px rgba(102, 204, 102, 0.2);
+
 }

@@ -33,7 +33,7 @@ let minuteIn = document.querySelector('.Minutes'),
 function restart() {
   minute = 24,
     sec = 60;
-    clock()
+  clock()
 }
 
 function start() {
@@ -43,9 +43,11 @@ function start() {
   intervalo = setInterval(() => {
     sec--
     clock()
-
     if (sec == 0 && minute == 0) {
-      window.close("./index.html")
+      window.close()
+      minute = 24
+      sec = 60
+      pause()
       if (changeTheme.classList.contains('dark')) {
         window.open("./dark.html")
       } else {
